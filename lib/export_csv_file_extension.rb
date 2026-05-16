@@ -38,7 +38,7 @@ end
 
 
 module ExtendedDownloadGuardianExtension
-  def can_export_entity?(entity)
+  def can_export_entity?(entity, *args)
     if entity == "user_archive" || entity == 'admin_user_archive'
       return false unless @user
 
